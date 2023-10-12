@@ -15,17 +15,28 @@ body {
   background: url("imagenlogin.jpeg");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {
   width: 420px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
-  border-radius: 10px;
-  padding: 30px 40px;
+  border-radius: 35px;
+  padding: 70px 40px;
 }
 
 .wrapper h1 {
@@ -65,29 +76,8 @@ body {
   font-size: 20px;
 }
 
-.wrapper .remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin: -15px 0 15px;
-}
-
-.remember-forgot label input {
-  accent-color: #fff;
-  margin-right: 3px;
-}
-
-.remember-forgot a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.remember-forgot a:hover {
-  text-decoration: underline;
-}
-
 .wrapper .btn {
-  width: 100%;
+  width: 80%;
   height: 45px;
   background: #fff;
   border: none;
@@ -98,6 +88,8 @@ body {
   font-size: 16px;
   color: #333;
   font-weight: 600;
+  margin: 0 auto;
+  display: block;
 }
 
 .wrapper .register-link {
@@ -114,4 +106,14 @@ body {
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+.outside-rectangle {
+  position: absolute;
+  bottom: 130px;
+  left: 37%;
+  transform: translateX(-50);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
 }
