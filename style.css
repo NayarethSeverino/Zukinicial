@@ -80,6 +80,31 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.548);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #606f0e;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper .btn:hover {
+  background: rgba(255, 255, 255, 0.797);
+  color: #3e4708;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 45px;
   background: rgba(255, 255, 255, 0.548);
@@ -91,12 +116,12 @@ body::before {
   font-size: 16px;
   color: #606f0e;
   font-weight: 600;
-  margin: 20px auto; /* Ajusta el margen para centrar el botón */
+  margin: 0 auto;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.wrapper .btn:hover {
+.google-btn:hover {
   background: rgba(255, 255, 255, 0.797);
   color: #3e4708;
 }
@@ -107,20 +132,19 @@ body::before {
   margin: 20px 0 15px;
 }
 
-.register-link a {
+.register-link p a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: text-decoration 0.3s;
 }
 
-.register-link a:hover {
+.register-link p a:hover {
   text-decoration: underline;
 }
 
 .outside-rectangle {
   position: absolute;
-  bottom: 115px;
+  bottom: 70px;
   left: 37%;
   transform: translateX(-50);
   text-align: center;
